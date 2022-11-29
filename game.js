@@ -11,6 +11,22 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
+  if (!textNode.image == ""){
+    const image = document.createElement('img');
+    image.setAttribute(
+      'src',
+      textNode.image,
+    );  
+    image.setAttribute(
+      'style',
+      "height: 600px;",
+    );  
+    image.setAttribute(
+      'id',
+      "drawing",
+    );  
+    document.getElementById('draw').appendChild(image);
+  }
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
@@ -31,12 +47,14 @@ function showOption(option) {
 }
 
 function selectOption(option) {
+  
   const nextTextNodeId = option.nextText
   if (nextTextNodeId <= 0) {
     return startGame()
   }
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
+
 }
 
 const textNodes = [
@@ -53,6 +71,7 @@ const textNodes = [
   {
     id: 2,
     text: "It's your first day of class and because you are a freshman, you were only able to register for the 8 AM section of CS 1332 - Data Structures and Algorithms with Professor HB. You notice someone sit down next to you and as you glance over, your eyes meet. What should you say?",
+    image: "classroom.png",
     options: [
       {
         text: '"This class is is going to be a piece of cake, pftttt. Especially after interning at Google during senior year LOL.',
@@ -316,7 +335,7 @@ const textNodes = [
         nextText: 19
       },
       {
-        text: ' "Wha-" you try to comprhend the sityuation at hand',
+        text: ' "Wha-" you try to comprehend the situation at hand',
         nextText: 19
       }
 
