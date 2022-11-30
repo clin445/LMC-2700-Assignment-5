@@ -212,7 +212,7 @@ const textNodes = [
       },
       {
         text: 'You reject the call - you were already late to class and you do not want to fall behind',
-        nextText: -1
+        nextText: 20
       },
 
     ]
@@ -250,16 +250,19 @@ const textNodes = [
       {
         text: '"Hey man, how are you feeling about your first day on campus?"',
         setState: { niceRoommate: true},
+        setState: {badRoommate: false},
         nextText: 15
       },
       {
         text: '"Ugh, 8 AM classes are the worst. I am just so glad that the breakfast food here is good."',
         setState: { niceRoommate: true},
+        setState: {badRoommate: false},
         nextText: 15
       },
       {
         text: 'Say nothing and just eat - you are famished after that intense CS 1332 lecture.',
         setState: {badRoommate: true},
+        setState: { niceRoommate: false},
         nextText: 15
       },
 
@@ -273,19 +276,19 @@ const textNodes = [
     options: [
       {
         text: ' You decide to introduce them to one another, saying "Oh, this is Isabell, my childhood friend. Isabell, this is Jerry, my roommate."',
-        setState: {badRoommate: false},
-        setState: { niceRoommate: true},
+        setState: {niceRoommate: true},
+        setState: {badRoommate: true},
         nextText: 16
       },
       {
         text: ' You go ahead and greet Isabell and ignore Jerry and his confused look. "Hey Isabell, I did not expect you to come here and eat breakfast," you say warmly.',
-        setState: { niceRoommate: false},
+        setState: {niceRoommate: false},
         setState: {badRoommate: true},
         nextText: 16
       },
       {
         text: 'Say nothing and just eat - you are famished after that intense CS 1332 lecture.',
-        setState: { niceRoommate: false},
+        setState: {niceRoommate: false},
         setState: {badRoommate: true},
         nextText: 16
       },
@@ -352,6 +355,94 @@ const textNodes = [
       }
 
 
+    ]
+  },
+  {
+    id: 20,
+    text: ' You pay attention to the lecure but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I could\'nt help but to laugh at someone sleeping on the first day." How do you respond?',
+    options: [
+      {
+        text: '"Right, because the syllabus is just that important," you jab back, more lucid.',
+        nextText: 21
+      },
+      {
+        text: 'You jerk your head up, instantly more awake and slightly embaressed.',
+        nextText: 22
+      },
+      {
+        text: '"Ahaha... it\'s been a kind of rough day already," you say even though you are barely half way through your day.',
+        nextText: 21
+      }
+    ]
+  },
+  {
+    id: 21,
+    text: ' She chuckles at your comeback, "I\'m Jennifer, a second year CS student. I\'m guessing you\'re a freshie?"',
+    options: [
+      {
+        text: '"Hah," you scoff, "as if I\'d tell you."',
+        setState: {goodJen: true},
+        nextText: 22
+      },
+      {
+        text: '"Yeah, I\'m George, a first year CS student."',
+        nextText: 22
+      }
+    ]
+  },
+  {
+    id: 22,
+    text: ' The professor announced that class would be let out early today. You notice that you have a text notification from Isabell. "Guess, you can finally get your beauty sleep," she says with a coy smile. How do you respond?',
+    options: [
+      {
+        text: 'You don\'t look at her and quickly bolt out of that class - Isabell finally texted you first!',
+        nextText: 24
+      },
+      {
+        text: '"It\'s just subliminal learning," you retort back with an eyeroll.',
+        requiredState: (currentState) => currentState.goodJen,
+        nextText: 23
+      },
+      {
+        text: '"uh.. ok?" you say, feeling slightly offended that she is implying that you are not beautiful.',
+        nextText: 24
+      }
+    ]
+  },
+  {
+    id: 23,
+    text: ' "Yeah, yeah, trust me I\'ve tried that and it has NOT worked well," she replies, "so if you ever need help, call me sometime." She hands you her number. How do you respond?',
+    options: [
+      {
+        text: 'You quickly put her number in her phone and text her your name, since you didn\'t give it to her earlier.',
+        setState: {jenNumber: true},
+        nextText: 24
+      },
+      {
+        text: '"Skill gap," you respond before the two of you part ways. You save her number in your phone.',
+        setState: {jenNumber: true},
+        nextText: 24
+      },
+      {
+        text: '"EEEEEEEEEEEEEEEEK," you shriek a little too loudly. You can\'t control your exictement since this is the first time that someone gave you their number.',
+        setState: {jenNumber: true},
+        setState: {goodJen: false},
+        nextText: 24
+      }
+    ]
+  },
+  {
+    id: 24,
+    text: ' You open your texts to see: "Hey George! It\'s been a while, but we should hangout this weekend! You can bring your roommate too if he wants to come with us :) \n How do you respond?"',
+    options: [
+      {
+        text: '"Hey Isabell! I would love to hangout this weekend. I haven\'t seen you since the summer. I\'ll make sure to tell Jerry and let him know :D"',
+        nextText: -1
+      },
+      {
+        text: '"Awww, I would love to, but I already have plans made. Let\'s hangout some other time!"',
+        nextText: -1
+      }
     ]
   }
 ]
