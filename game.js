@@ -359,7 +359,7 @@ const textNodes = [
   },
   {
     id: 20,
-    text: ' You pay attention to the lecure but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I could\'nt help but to laugh at someone sleeping on the first day." How do you respond?',
+    text: ' You pay attention to the lecure but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I couldn\'t help but to laugh at someone sleeping on the first day." How do you respond?',
     options: [
       {
         text: '"Right, because the syllabus is just that important," you jab back, more lucid.',
