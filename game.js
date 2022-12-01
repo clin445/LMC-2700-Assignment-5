@@ -134,8 +134,7 @@ const textNodes = [
     options: [
       {
         text: '"I like coding. Wait, scratch that. I LOVE coding. Also, League of Legends. I love League.',
-        setState: { badNicole: true },
-        setState: { goodNicole: false },
+        setState: { badNicole: true, goodNicole: false },
         nextText: 8,
       },
       {
@@ -144,8 +143,7 @@ const textNodes = [
       },
       {
         text: '"I love to read, cook, and watch bad rom-coms."',
-        setState: { neutralNicole: true },
-        setState: { goodNicole: false },
+        setState: { neutralNicole: true, goodNicole: false },
         nextText: 8,
       },
     ],
@@ -395,8 +393,7 @@ const textNodes = [
       },
       {
         text: '"EEEEEEEEEEEEEEEEK," you shriek a little too loudly. You can\'t control your exictement since this is the first time that someone gave you their number.',
-        setState: { jenNumber: true },
-        setState: { goodJen: false },
+        setState: { jenNumber: true, goodJen: false },
         nextText: 24,
       },
     ],
@@ -602,14 +599,12 @@ const textNodes = [
       },
       {
         text: "Jasmine Green Milk Tea. Green tea and milk tea might be a good mix!",
-        setState: { goodIsa: false },
-        setState: { badIsa: true },
+        setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
         text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember come on!",
-        setState: { goodIsa: false },
-        setState: { badIsa: true },
+        setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
@@ -643,8 +638,7 @@ const textNodes = [
       {
         text: '"Of course I knew, I am just a big brain alpha male you know?"',
         requiredState: (currentState) => !currentState.wingman,
-        setState: { goodIsa: false },
-        setState: { badIsa: true },
+        setState: { goodIsa: false, badIsa: true },
         nextText: 39,
       },
     ],
@@ -666,6 +660,7 @@ const textNodes = [
       {
         text: 'Continue',
         requiredState: (currentState) => currentState.goodIsa,
+        requiredState: (currentState) => !currentState.badIsa,
         nextText: 40,
       },
       {
@@ -778,14 +773,12 @@ const textNodes = [
       },
       {
         text: "Jasmine Green Milk Tea. Green tea and milk tea might be a good mix!",
-        setState: { goodIsa: false },
-        setState: { badIsa: true },
+        setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
         text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember come on!",
-        setState: { goodIsa: false },
-        setState: { badIsa: true },
+        setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
