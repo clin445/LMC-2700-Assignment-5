@@ -120,7 +120,7 @@ const textNodes = [
   },
   {
     id: 6,
-    text: '"Sure, I did not eat breakfast yet and I am kind of hungry too!"',
+    text: '"Sure, I didn\'t eat breakfast yet and I am kind of hungry too!"',
     options: [
       {
         text: "Continue",
