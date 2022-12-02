@@ -39,6 +39,15 @@ img{
   margin: auto;
   margin-bottom: 20px;
 }
+#drawing{
+ height: 700px;
+ margin-bottom: 20px;
+
+}
+#draw{
+  margin-left: auto;
+margin-right: auto; height: 730px;
+}
 /**
 .typewriter {
     overflow: hidden; 

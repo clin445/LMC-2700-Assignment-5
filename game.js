@@ -11,13 +11,19 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerText = textNode.text;
+  if (document.contains(document.getElementById("drawing"))){
+    document.getElementById("drawing").remove();
+  }
   if (!textNode.image == "") {
+    const draw = document.createElement("div");
+    draw.id = "draw";
     const image = document.createElement("img");
     image.setAttribute("src", textNode.image);
-    image.setAttribute("style", "height: 600px;");
+
     image.setAttribute("id", "drawing");
     document.getElementById("draw").appendChild(image);
   }
+
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild);
   }
@@ -44,6 +50,8 @@ function selectOption(option) {
   }
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
+  document.getElementById("draw").remove;
+
 }
 
 const textNodes = [
@@ -60,7 +68,7 @@ const textNodes = [
   {
     id: 2,
     text: "It's your first day of class and because you are a freshman, you were only able to register for the 8 AM section of CS 1332 - Data Structures and Algorithms with Professor HB. You notice someone sit down next to you and as you glance over, your eyes meet. What should you say?",
-    image: "classroom.png",
+    image: "frame1.jpg",
     options: [
       {
         text: '"This class is is going to be a piece of cake, pftttt. Especially after interning at Google during senior year LOL.',
@@ -82,6 +90,7 @@ const textNodes = [
   {
     id: 3,
     text: 'The girl beside you responds, "ah okay...cool, ha.',
+    image:"frame2.jpg",
     options: [
       {
         text: "Continue",
@@ -92,6 +101,7 @@ const textNodes = [
   {
     id: 4,
     text: 'The girl beside you responds, "Oh hey, my name is Nicole! I am a first year CS major!',
+    image:"frame2.jpg",
     options: [
       {
         text: "Continue",
@@ -102,6 +112,7 @@ const textNodes = [
   {
     id: 5,
     text: "You chat with Nicole, the girl next to you, for a bit longer until Professor HB starts the first lecture. Soon after the lecture ends, you see Nicole begin to leave. What do you do?",
+    image:"frame3.jpg",
     options: [
       {
         text: '"Have you ate yet? I am going to go to Rising Roll and check it out, wanna come?',
@@ -121,6 +132,7 @@ const textNodes = [
   {
     id: 6,
     text: '"Sure, I didn\'t eat breakfast yet and I am kind of hungry too!"',
+    image:"frame4.jpg",
     options: [
       {
         text: "Continue",
@@ -131,6 +143,7 @@ const textNodes = [
   {
     id: 7,
     text: "You and Nicole head over to Rising Roll and enjoy sandwiches over small dialogue. She asks you about your hobbies. How do you respond?",
+    image: "id7.jpg",
     options: [
       {
         text: '"I like coding. Wait, scratch that. I LOVE coding. Also, League of Legends. I love League.',
@@ -153,6 +166,7 @@ const textNodes = [
   {
     id: 8,
     text: "The two of you finish your meals and begin to get ready to leave for the next class. What do you do?",
+    image: "id8.jpg",
     options: [
       {
         text: '"Hey do you want to exchange numbers, so we can study and hang out sometime again?"',
@@ -172,6 +186,7 @@ const textNodes = [
   {
     id: 9,
     text: 'She responds, "Sure! Sounds like fun. Let me know if you ever want to do something."',
+    image: "id9.jpg",
     options: [
       {
         text: "You exchange numbers",
@@ -183,6 +198,7 @@ const textNodes = [
   {
     id: 10,
     text: "The two of you head your separate ways. You head to your next class, MATH 1554 - Linear Algebra.",
+    image: "id10.jpg",
     options: [
       {
         text: "continue",
@@ -193,6 +209,7 @@ const textNodes = [
   {
     id: 11,
     text: "You arrive to your MATH 1554 - Linear Algebra class 5 minutes late and enter the packed lecture hall. You get a phone call from Isabell, your childhood friend that is a sophomore CS major at Georgia Tech while the professor has already jumped into the lecture material. What do you do? ",
+    image: "id11.jpg",
     options: [
       {
         text: "You pick up the phone",
@@ -208,6 +225,7 @@ const textNodes = [
   {
     id: 12,
     text: 'You exit the lecture hall to pick up the phone. "Hey George, I have to show you around campus sometime! Do you want hangout at tech square with me on Saturday?" Isabell asks. ',
+    image: "id12.jpg",
     options: [
       {
         text: '"Sure, I would love to hang out again! I do not know the area well, so I will be counting on you to lead the way!" you reply. Isabell suggests that you should also invite your roommate Jerry and the two of you spend the rest of the class making plans and catching up.',
@@ -218,6 +236,7 @@ const textNodes = [
   {
     id: 13,
     text: 'Nicole gives you an unsure look and says "I think I will pass on that offer, maybe some other time". ',
+    image: "frame4.jpg",
     options: [
       {
         text: '"Alright, maybe some other time!" You decide to go to Willage without her.',
@@ -227,6 +246,7 @@ const textNodes = [
   },
   {
     id: 14,
+    image: "id14.jpg",
     text: "You end up heading to Willage on your own. You grab food and as you find seating, you see your roommate Jerry eating alone and decide to sit with him. What do you say to him? ",
     options: [
       {
@@ -249,6 +269,7 @@ const textNodes = [
 
   {
     id: 15,
+    image: "id15.jpg",
     text: '"Well, I-" before he can even begin to ramble about what he thinks, Isabell, your childhood friend, suddenly appears and plops herself next to you and Jerry, inviting herself to eat with the two of you. Jerry looks visibly surprised that such a cool person knows you. What do you do?',
     options: [
       {
@@ -270,6 +291,7 @@ const textNodes = [
   },
   {
     id: 16,
+    image: "id16.jpg",
     text: " The three of you ease into the conversation. You had a great time catching up with Isabell since the two of you were unable to meet up during the summer break. you lose track of time and realize that you have to go to your next class, MATH 1554 - Linear Algebra. You tell them you have to leave for class and Jerry tags along with you since he also has a class at that time.",
     options: [
       {
@@ -287,6 +309,7 @@ const textNodes = [
   },
   {
     id: 17,
+    image: "id17+18.jpg",
     text: ' Jerry says, "Hey, if you ever need a wingman, you can ask me. I gotchu." You look very confused at what he is suggesting, but he walks in the other direction before you can respond.',
     options: [
       {
@@ -303,6 +326,7 @@ const textNodes = [
   },
   {
     id: 18,
+    image: "id17+18.jpg",
     text: ' Jerry asks, " How come you have never said anything about her? She is so cool, is she single?"',
     options: [
       {
@@ -319,6 +343,7 @@ const textNodes = [
   },
   {
     id: 19,
+    image: "id19.jpg",
     text: " Jerry walks away before you can get a single word out.",
     options: [
       {
@@ -329,6 +354,7 @@ const textNodes = [
   },
   {
     id: 20,
+    image: "id20.jpg",
     text: ' You pay attention to the lecure but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I couldn\'t help but to laugh at someone sleeping on the first day." How do you respond?',
     options: [
       {
@@ -347,6 +373,7 @@ const textNodes = [
   },
   {
     id: 21,
+    image: "id21.jpg",
     text: " She chuckles at your comeback, \"I'm Jennifer, a second year CS student. I'm guessing you're a freshie?\"",
     options: [
       {
@@ -362,6 +389,7 @@ const textNodes = [
   },
   {
     id: 22,
+    image: "22.jpg",
     text: ' The professor announced that class would be let out early today. You notice that you have a text notification from Isabell. "Guess, you can finally get your beauty sleep," Jennifer says with a coy smile. How do you respond?',
     options: [
       {
@@ -381,6 +409,7 @@ const textNodes = [
   },
   {
     id: 23,
+    image: "id23.jpg",
     text: ' "Yeah, yeah, trust me I\'ve tried that and it has NOT worked well," she replies, "so if you ever need help, call me sometime." She hands you her number. How do you respond?',
     options: [
       {
