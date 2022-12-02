@@ -54,7 +54,9 @@ function selectOption(option) {
 
 }
 
+
 const textNodes = [
+//The beginning of the Story plot line
   {
     id: 1,
     text: "Welcome to LoveStung! Our main protagonist is George P. Burdell, a freshman CS major starting his first year in college.",
@@ -429,6 +431,7 @@ const textNodes = [
   },
   {
     id: 24,
+    image: "img/id23.jpg",
     text: "You look at your phone and decide who you should ask to make plans with for the upcoming weekend.",
     options: [
       {
@@ -869,7 +872,7 @@ const textNodes = [
         nextText: 39,
       }
     ],
-  },
+  };
 ];
 
 startGame();
