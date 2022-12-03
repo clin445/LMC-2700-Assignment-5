@@ -11,7 +11,7 @@ function startGame() {
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find((textNode) => textNode.id === textNodeIndex);
   textElement.innerText = textNode.text;
-  if (document.contains(document.getElementById("drawing"))){
+  if (document.contains(document.getElementById("drawing"))) {
     document.getElementById("drawing").remove();
   }
   if (!textNode.image == "") {
@@ -51,12 +51,10 @@ function selectOption(option) {
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
   document.getElementById("draw").remove;
-
 }
 
-
 const textNodes = [
-//The beginning of the Story plot line
+  //The beginning of the Story plot line
   {
     id: 1,
     text: "Welcome to LoveStung! Our main protagonist is George P. Burdell, a freshman CS major starting his first year in college.",
@@ -92,7 +90,7 @@ const textNodes = [
   {
     id: 3,
     text: 'The girl beside you responds, "ah okay...cool, ha.',
-    image:"img/frame2.jpg",
+    image: "img/frame2.jpg",
     options: [
       {
         text: "Continue",
@@ -103,7 +101,7 @@ const textNodes = [
   {
     id: 4,
     text: 'The girl beside you responds, "Oh hey, my name is Nicole! I am a first year CS major!',
-    image:"img/frame2.jpg",
+    image: "img/frame2.jpg",
     options: [
       {
         text: "Continue",
@@ -114,7 +112,7 @@ const textNodes = [
   {
     id: 5,
     text: "You chat with Nicole, the girl next to you, for a bit longer until Professor HB starts the first lecture. Soon after the lecture ends, you see Nicole begin to leave. What do you do?",
-    image:"img/frame3.jpg",
+    image: "img/frame3.jpg",
     options: [
       {
         text: '"Have you ate yet? I am going to go to Rising Roll and check it out, wanna come?',
@@ -134,7 +132,7 @@ const textNodes = [
   {
     id: 6,
     text: '"Sure, I didn\'t eat breakfast yet and I am kind of hungry too!"',
-    image:"img/frame4.jpg",
+    image: "img/frame4.jpg",
     options: [
       {
         text: "Continue",
@@ -612,7 +610,7 @@ const textNodes = [
     text: 'Isabell suggested going on a "Sweet Hut run" after you and Jerry were done with classes. As the three of you arrive to Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?',
     options: [
       {
-        text: 'Suddenly, Nicole calls you. Answer the phone?',
+        text: "Suddenly, Nicole calls you. Answer the phone?",
         setState: { routeNic: true },
         requiredState: (currentState) => currentState.nicoleNumber,
         nextText: 46,
@@ -680,33 +678,32 @@ const textNodes = [
     text: '"Thanks for the drink! I usually don\'t get this often. I would have preferred something else, but no biggie!"',
     options: [
       {
-        text: 'You see Jerry in the corner of your eye laughing, as he tries to not make too much noise.',
+        text: "You see Jerry in the corner of your eye laughing, as he tries to not make too much noise.",
         nextText: 39,
-      }
+      },
     ],
   },
   {
     id: 39,
-    text: 'The sun has started to set, and you decide to head to Willage with Jerry and Isabell for dinner. Grabbing the best dinning food that Tech offers, you begin to enjoy your meal and converse with Jerry.',
+    text: "The sun has started to set, and you decide to head to Willage with Jerry and Isabell for dinner. Grabbing the best dinning food that Tech offers, you begin to enjoy your meal and converse with Jerry.",
     options: [
       {
-        text: 'Continue',
+        text: "Continue",
         requiredState: (currentState) => currentState.goodIsa,
-        requiredState: (currentState) => !currentState.badIsa,
         nextText: 40,
       },
       {
-        text: 'Continue',
+        text: "Continue",
         requiredState: (currentState) => currentState.badIsa,
         nextText: 42,
       },
       {
-        text: 'Continue',
+        text: "Continue",
         requiredState: (currentState) => currentState.routeJen,
         nextText: 44,
       },
       {
-        text: 'Continue',
+        text: "Continue",
         requiredState: (currentState) => currentState.routeNic,
         nextText: 44,
       },
@@ -717,19 +714,19 @@ const textNodes = [
     text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy catching up with you. She asks, "Hey George, do you want to maybe watch a movie later tonight at my place? I\'ve got popcorn!"',
     options: [
       {
-        text: 'You smile warmly and say, "Of course, I\'d love to watch a movie with you.',
+        text: "You smile warmly and say, \"Of course, I'd love to watch a movie with you.",
         nextText: 41,
-      }
+      },
     ],
   },
   {
     id: 41,
-    text: 'You share many wonderful dates and excursions with Isabell, and eventually you become the cutest couple on Tech campus.',
+    text: "You share many wonderful dates and excursions with Isabell, and eventually you become the cutest couple on Tech campus.",
     options: [
       {
-        text: 'End',
+        text: "End",
         nextText: -1,
-      }
+      },
     ],
   },
   {
@@ -739,17 +736,17 @@ const textNodes = [
       {
         text: 'You answer, "ooooo that sounds like fun. Isabell, you should stop by!"',
         nextText: 43,
-      }
+      },
     ],
   },
   {
     id: 43,
-    text: 'As the school years progress, the three of you stay great friends who love to spend time with one another. From countless Sweet Hut runs, to those Willage dinner nights, the friendship bond is as strong as ever.',
+    text: "As the school years progress, the three of you stay great friends who love to spend time with one another. From countless Sweet Hut runs, to those Willage dinner nights, the friendship bond is as strong as ever.",
     options: [
       {
-        text: 'End',
+        text: "End",
         nextText: -1,
-      }
+      },
     ],
   },
   {
@@ -757,19 +754,19 @@ const textNodes = [
     text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy talking with Jerry. She asks, "Hey Jerry, do you want to try out this restaurant some time in the upcoming week?"',
     options: [
       {
-        text: 'Continue',
+        text: "Continue",
         nextText: 45,
-      }
+      },
     ],
   },
   {
     id: 45,
-    text: 'As the school years progress, Jerry and Isabell grew closer and closer. They end up as Tech\'s cutest couple, and you are happy for the both of them.',
+    text: "As the school years progress, Jerry and Isabell grew closer and closer. They end up as Tech's cutest couple, and you are happy for the both of them.",
     options: [
       {
-        text: 'End',
+        text: "End",
         nextText: -1,
-      }
+      },
     ],
   },
   {
@@ -789,7 +786,7 @@ const textNodes = [
   },
   {
     id: 47,
-    text: 'As the three of you arrive to Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?',
+    text: "As the three of you arrive to Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?",
     options: [
       {
         text: 'Jerry says, "You can\'t go wrong with Sweet Hut Milk Tea."',
@@ -829,10 +826,10 @@ const textNodes = [
   },
   {
     id: 48,
-    text: 'You make up some bad excuse to leave Jerry and Isabell to meet Nicole at Tin Drum. As you walk into the store, you are completely mesmerized by Nicole\'s outfit. As you are sweating profusely, what do you say to her?',
+    text: "You make up some bad excuse to leave Jerry and Isabell to meet Nicole at Tin Drum. As you walk into the store, you are completely mesmerized by Nicole's outfit. As you are sweating profusely, what do you say to her?",
     options: [
       {
-        text: '"Fancy seeing you here, \'pant\', it\'s not like, \'pant\', I just, \'pant\', ran here or anything LOL."',
+        text: "\"Fancy seeing you here, 'pant', it's not like, 'pant', I just, 'pant', ran here or anything LOL.\"",
         nextText: 49,
       },
       {
@@ -847,7 +844,7 @@ const textNodes = [
   },
   {
     id: 49,
-    text: 'You enjoy your time and Tin Drum with Nicole, and even end up walking her back to her dorm. During the walk, you had great conversations and felt as if there was something budding.',
+    text: "You enjoy your time and Tin Drum with Nicole, and even end up walking her back to her dorm. During the walk, you had great conversations and felt as if there was something budding.",
     options: [
       {
         text: '"I had a lot of fun today! I love learning more about you and all the crazy stories you have to tell."',
@@ -865,14 +862,14 @@ const textNodes = [
   },
   {
     id: 50,
-    text: '"Listen George, I had a lot of fun today too. The thing is, I don\'t think I am ready for a relationship, and plus this was our first outing. I don\'t want to lead you on, but I think it is best if we just stay friends."',
+    text: "\"Listen George, I had a lot of fun today too. The thing is, I don't think I am ready for a relationship, and plus this was our first outing. I don't want to lead you on, but I think it is best if we just stay friends.\"",
     options: [
       {
-        text: 'Continue :(',
+        text: "Continue :(",
         nextText: 39,
-      }
+      },
     ],
-  };
+  },
 ];
 
 startGame();
