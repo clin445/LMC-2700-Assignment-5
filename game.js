@@ -71,7 +71,7 @@ const textNodes = [
     image: "img/frame1.jpg",
     options: [
       {
-        text: '"This class is is going to be a piece of cake, pftttt. Especially after interning at Google during senior year LOL.',
+        text: '"This class is is going to be a piece of cake, pftttt. Especially after interning at Google during senior year LOL."',
         setState: { badNicole: true },
         nextText: 3,
       },
@@ -89,7 +89,7 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'The girl beside you responds, "ah okay...cool, ha.',
+    text: 'The girl beside you responds, "ah okay...cool, ha."',
     image: "img/frame2.jpg",
     options: [
       {
@@ -100,7 +100,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'The girl beside you responds, "Oh hey, my name is Nicole! I am a first year CS major!',
+    text: 'The girl beside you responds, "Oh hey, my name is Nicole! I am a first year CS major!"',
     image: "img/frame2.jpg",
     options: [
       {
@@ -115,16 +115,16 @@ const textNodes = [
     image: "img/frame3.jpg",
     options: [
       {
-        text: '"Have you ate yet? I am going to go to Rising Roll and check it out, wanna come?',
+        text: '"Have you eaten yet? I am going to go to Rising Roll and check it out, wanna come?"',
         requiredState: (currentState) => currentState.goodNicole,
         nextText: 6,
       },
       {
-        text: '"I heard Willage breakfast slaps, want to try it out with me?',
+        text: '"I heard Willage breakfast slaps, want to try it out with me?"',
         nextText: 13,
       },
       {
-        text: '"Breakfast is for noobs, code for life"',
+        text: '"Breakfast is for noobs, code for life."',
         nextText: 14,
       },
     ],
@@ -142,16 +142,16 @@ const textNodes = [
   },
   {
     id: 7,
-    text: "You and Nicole head over to Rising Roll and enjoy sandwiches over small dialogue. She asks you about your hobbies. How do you respond?",
+    text: "You and Nicole head over to Rising Roll and enjoy sandwiches over small talk. She asks you about your hobbies. How do you respond?",
     image: "img/id7.jpg",
     options: [
       {
-        text: '"I like coding. Wait, scratch that. I LOVE coding. Also, League of Legends. I love League.',
+        text: '"I like coding. Wait, scratch that. I LOVE coding. Also, League of Legends. I main Katarina."',
         setState: { badNicole: true, goodNicole: false },
         nextText: 8,
       },
       {
-        text: '"I enjoy playing tennis and going out with friends (responsibly).',
+        text: '"I enjoy playing tennis and going out with friends (responsibly)."',
         nextText: 8,
       },
       {
@@ -187,7 +187,7 @@ const textNodes = [
     image: "img/id9.jpg",
     options: [
       {
-        text: "You exchange numbers",
+        text: "You exchange numbers.",
         setState: { nicoleNumber: true },
         nextText: 10,
       },
@@ -199,30 +199,30 @@ const textNodes = [
     image: "img/id10.jpg",
     options: [
       {
-        text: "continue",
+        text: "Continue",
         nextText: 11,
       },
     ],
   },
   {
     id: 11,
-    text: "You arrive to your MATH 1554 - Linear Algebra class 5 minutes late and enter the packed lecture hall. You get a phone call from Isabell, your childhood friend that is a sophomore CS major at Georgia Tech while the professor has already jumped into the lecture material. What do you do? ",
+    text: "You arrive to your MATH 1554 - Linear Algebra class 5 minutes late and enter the packed lecture hall. You get a phone call from Isabell, your childhood friend that is a sophomore CS major at Georgia Tech while the professor has already jumped into the lecture material. What do you do?",
     image: "img/id11.jpg",
     options: [
       {
-        text: "You pick up the phone",
+        text: "You pick up the phone.",
         setState: { answerPhone: true },
         nextText: 12,
       },
       {
-        text: "You reject the call - you were already late to class and you do not want to fall behind",
+        text: "You reject the call - you were already late to class and you do not want to fall behind.",
         nextText: 20,
       },
     ],
   },
   {
     id: 12,
-    text: 'You exit the lecture hall to pick up the phone. "Hey George, I have to show you around campus sometime! Do you want hangout at tech square with me on Saturday?" Isabell asks. ',
+    text: 'You exit the lecture hall to pick up the phone. "Hey George, I have to show you around campus sometime! Do you want hangout at Tech Square with me on Saturday?" Isabell asks.',
     image: "img/id12.jpg",
     options: [
       {
@@ -233,7 +233,7 @@ const textNodes = [
   },
   {
     id: 13,
-    text: 'Nicole gives you an unsure look and says "I think I will pass on that offer, maybe some other time". ',
+    text: 'Nicole gives you an unsure look and says "I think I will pass on that offer, maybe some other time."',
     image: "img/frame4.jpg",
     options: [
       {
@@ -245,7 +245,7 @@ const textNodes = [
   {
     id: 14,
     image: "img/id14.jpg",
-    text: "You end up heading to Willage on your own. You grab food and as you find seating, you see your roommate Jerry eating alone and decide to sit with him. What do you say to him? ",
+    text: "You end up heading to Willage on your own. You grab food and as you find seating, you see your roommate Jerry eating alone and decide to sit with him. What do you say to him?",
     options: [
       {
         text: '"Hey man, how are you feeling about your first day on campus?"',
@@ -271,12 +271,12 @@ const textNodes = [
     text: '"Well, I-" before he can even begin to ramble about what he thinks, Isabell, your childhood friend, suddenly appears and plops herself next to you and Jerry, inviting herself to eat with the two of you. Jerry looks visibly surprised that such a cool person knows you. What do you do?',
     options: [
       {
-        text: ' You decide to introduce them to one another, saying "Oh, this is Isabell, my childhood friend. Isabell, this is Jerry, my roommate."',
+        text: ' You decide to introduce them to one another: "Oh, this is Isabell, my childhood friend. Isabell, this is Jerry, my roommate."',
         setState: { niceRoommate2: true },
         nextText: 16,
       },
       {
-        text: ' You go ahead and greet Isabell and ignore Jerry and his confused look. "Hey Isabell, I did not expect you to come here and eat breakfast," you say warmly.',
+        text: ' You go ahead and greet Isabell and ignore Jerry\'s confused look. "Hey Isabell, I didn\'t expect you to come here and eat breakfast," you say warmly.',
         setState: { niceRoommate2: false },
         nextText: 16,
       },
@@ -290,16 +290,16 @@ const textNodes = [
   {
     id: 16,
     image: "img/id16.jpg",
-    text: " The three of you ease into the conversation. You had a great time catching up with Isabell since the two of you were unable to meet up during the summer break. you lose track of time and realize that you have to go to your next class, MATH 1554 - Linear Algebra. You tell them you have to leave for class and Jerry tags along with you since he also has a class at that time.",
+    text: " The three of you ease into the conversation. You had a great time catching up with Isabell since the two of you were unable to meet up during the summer break. You lose track of time and realize that you have to go to your next class, MATH 1554 - Linear Algebra. You tell them you have to leave for class and Jerry tags along with you since he also has a class at that time.",
     options: [
       {
-        text: " continue",
+        text: "Continue",
         requiredState: (currentState) => currentState.niceRoommate,
         requiredState: (currentState) => currentState.niceRoommate2,
         nextText: 17,
       },
       {
-        text: " continue",
+        text: "Continue",
         requiredState: (currentState) => !currentState.niceRoommate2,
         nextText: 18,
       },
@@ -325,15 +325,15 @@ const textNodes = [
   {
     id: 18,
     image: "img/id17+18.jpg",
-    text: ' Jerry asks, " How come you have never said anything about her? She is so cool, is she single?"',
+    text: ' Jerry asks, " How come you\'ve never said anything about her? She\'s so cool, is she single?"',
     options: [
       {
-        text: ' "uhh",  you begin to think if she is single or not.',
+        text: ' "Uhh",  you begin to think if she is single or not.',
         setState: { wingman: false },
         nextText: 19,
       },
       {
-        text: ' "Wha-" you try to comprehend the situation at hand',
+        text: ' "Wha-" you try to comprehend the situation at hand.',
         setState: { wingman: false },
         nextText: 19,
       },
@@ -345,7 +345,7 @@ const textNodes = [
     text: " Jerry walks away before you can get a single word out.",
     options: [
       {
-        text: " continue",
+        text: "Continue",
         nextText: 11,
       },
     ],
@@ -391,7 +391,7 @@ const textNodes = [
     text: ' The professor announced that class would be let out early today. You notice that you have a text notification from Isabell. "Guess, you can finally get your beauty sleep," Jennifer says with a coy smile. How do you respond?',
     options: [
       {
-        text: "You don't look at her and quickly bolt out of that class - Isabell finally texted you first!",
+        text: "You don't look at her and quickly bolt out of class - Isabell finally texted you first!",
         nextText: 27,
       },
       {
@@ -400,7 +400,7 @@ const textNodes = [
         nextText: 23,
       },
       {
-        text: '"uh.. ok?" you say, feeling slightly offended that she is implying that you are not beautiful.',
+        text: '"Uh... ok?" you say, feeling slightly offended that she is implying that you are not beautiful.',
         nextText: 24,
       },
     ],
@@ -411,7 +411,7 @@ const textNodes = [
     text: ' "Yeah, yeah, trust me I\'ve tried that and it has NOT worked well," she replies, "so if you ever need help, call me sometime." She hands you her number. How do you respond?',
     options: [
       {
-        text: "You quickly put her number in her phone and text her your name, since you didn't give it to her earlier.",
+        text: "You quickly put her number in your phone and text her your name, since you didn't give it to her earlier.",
         setState: { jenNumber: true },
         nextText: 24,
       },
@@ -421,7 +421,7 @@ const textNodes = [
         nextText: 24,
       },
       {
-        text: '"EEEEEEEEEEEEEEEEK," you shriek a little too loudly. You can\'t control your exictement since this is the first time that someone gave you their number.',
+        text: '"EEEEEEEEEEEEEEEEK," you shriek a little too loudly. You can\'t control your exictement since this is the first time someone has given you their number.',
         setState: { jenNumber: true, goodJen: false },
         nextText: 24,
       },
@@ -446,7 +446,7 @@ const textNodes = [
         nextText: 26,
       },
       {
-        text: 'Text Isabell, "We should catch up, are you free this weekend?',
+        text: 'Text Isabell, "We should catch up, are you free this weekend?"',
         nextText: 36,
       },
     ],
@@ -463,29 +463,29 @@ const textNodes = [
   },
   {
     id: 26,
-    text: 'Jennifer exclaims, "Yeah that sounds like fun! Do you happen to play any tennis? I played a lot when I was in high school, and I\'ve been dying to play a game!"',
+    text: 'Jennifer exclaims, "Yeah that sounds like fun! Do you happen to play tennis? I played a lot when I was in high school, and I\'ve been dying to play a game!"',
     options: [
       {
-        text: '"I\'d love to play tennis! I am not that great at it, but I think I can put up a good fight."',
+        text: '"I\'d love to play tennis! I\'m not that great at it, but I think I can put up a good fight."',
         nextText: 27,
       },
       {
-        text: "\"Tennis isn't my forte, but I wouldn't mind giving it a spin.\"",
+        text: '"Tennis isn\'t my forte, but I wouldn\'t mind giving it a spin."',
         nextText: 27,
       },
     ],
   },
   {
     id: 27,
-    text: ' You suddenly get a text and you see: "Hey George! It\'s been a while, but we should hangout this weekend! You can bring your roommate too if he wants to come with us :) \n How do you respond?"',
+    text: ' You suddenly get a text and you see: "Hey George! It\'s been a while, but we should hang out this weekend! You can bring your roommate too if he wants to come with us :)" \n How do you respond?',
     options: [
       {
-        text: "\"Hey Isabell! I would love to hangout this weekend. I haven't seen you since the summer. I'll make sure to tell Jerry and let him know :D\"",
+        text: "\"Hey Isabell! I would love to hang out this weekend. I haven't seen you since the summer. I'll make sure to tell Jerry and let him know :D\"",
         requiredState: (currentState) => !currentState.routeJen,
         nextText: 36,
       },
       {
-        text: '"Awww, I would love to, but I already have plans made. Let\'s hangout some other time!"',
+        text: '"Awww, I would love to, but I\'ve already made plans. Let\'s hang out some other time!"',
         requiredState: (currentState) => currentState.routeJen,
         nextText: 28,
       },
@@ -496,17 +496,17 @@ const textNodes = [
     text: "The weekend rolls around and you are excited to play tennis with Jennifer! As you arrive at Ken Byers' courts, you notice her already practicing some hits. What do you say?",
     options: [
       {
-        text: '"Sorry to interupt your pre-game warmups, you will definitely need them if you are up against me."',
+        text: '"Sorry to interupt your pre-game warmups, you\'ll definitely need them if you\'re up against me."',
         setState: { goodJen: false },
         nextText: 29,
       },
       {
-        text: "Mind if I join in for some warmup?",
+        text: '"Mind if I join in for some warmup?"',
         setState: { goodJen: true },
         nextText: 29,
       },
       {
-        text: "Your forehand has great form, you've got to teach me!",
+        text: '"Your forehand has great form, you\'ve got to teach me!"',
         setState: { goodJen: true },
         nextText: 29,
       },
@@ -514,7 +514,7 @@ const textNodes = [
   },
   {
     id: 29,
-    text: "\"I've been playing for a while now, so I hope you don't get too intimidated. Let's rally for a bit and then play a few games!\"",
+    text: "\"I've been playing for a while now, so I hope you don't get too intimidated. Let's rally for a bit and then play a few games!\" Jennifer smirks.",
     options: [
       {
         text: "Continue",
@@ -544,7 +544,7 @@ const textNodes = [
   },
   {
     id: 31,
-    text: "\"Wow I didn't know I was playing with a sore loser baby. You deserve to lose, maybe trying working on... I don't know... EVERYTHING CAUSE YOU SUCK!\"",
+    text: "\"Wow I didn't know I was playing with a sore loser baby. You deserve to lose, maybe trying working on... I don't know... EVERYTHING CAUSE YOU SUCK!\" Jennifer yells.",
     options: [
       {
         text: "Jennifer storms off.",
@@ -555,10 +555,10 @@ const textNodes = [
   },
   {
     id: 32,
-    text: '"Thanks, you played really well too! We should play again sometime."',
+    text: '"Thanks, you played really well too! We should play again sometime," Jennifer smiles warmly.',
     options: [
       {
-        text: '"Sounds great to me!',
+        text: '"Sounds great to me!"',
         nextText: 39,
       },
       {
@@ -573,10 +573,10 @@ const textNodes = [
   },
   {
     id: 33,
-    text: 'You and Jennifer end up playing badminton all night at the CRC. There seems to be a spark that draws both of you into each other. You would end up going on countless amounts of dates with Jennifer, as you really enjoy spending time with her. One day while hanging out, she asks you for advice. "I just got an offer to study abroad at multiple prestigious universities! The thing is, it would be for 2 years, meaning that I would graduate without seeing you for two years. Do you think I should take the offer?"',
+    text: 'You and Jennifer end up playing badminton all night at the CRC. There seems to be a spark that draws both of you into each other. You would end up going on countless amounts of dates with Jennifer, as you really enjoy spending time with her. One day while hanging out, she asks you for advice. "I just got an offer to study abroad at multiple prestigious universities! The thing is, it would be for two years, meaning that I would graduate without seeing you for two years. Do you think I should take the offer?"',
     options: [
       {
-        text: '"Jennifer, I really like you! I would love to date you and I personally don\'t think I could do long distance. 2 years abroad seems a bit much and difficult in my opinion. I think you should stay."',
+        text: '"Jennifer, I really like you! I would love to date you, and I personally don\'t think I could do long distance. Two years abroad seems a bit much and difficult in my opinion. I think you should stay."',
         nextText: 34,
       },
       {
@@ -587,7 +587,7 @@ const textNodes = [
   },
   {
     id: 34,
-    text: '"Got it, thanks for the advice!"... You start to date Jennifer for a couple of months and everything seems to be going well. However, she eventually breaks up with you after coming to the conclusion that she wants to focus on herself and her career.',
+    text: '"Got it, thanks for the advice!"\n You start to date Jennifer for a couple of months and everything seems to be going well. However, she eventually breaks up with you after coming to the conclusion that she wants to focus on herself and her career.',
     options: [
       {
         text: "End",
@@ -597,7 +597,7 @@ const textNodes = [
   },
   {
     id: 35,
-    text: '"Got it, thanks for the advice!"... Jennifer ends up traveling abroad, but you stay in close contact with her. Your bond is strong and you both remain great friends for years to come.',
+    text: '"Got it, thanks for the advice!"\n Jennifer ends up traveling abroad, but you stay in close contact with her. Your bond is strong and you both remain great friends for years to come.',
     options: [
       {
         text: "End",
@@ -607,7 +607,7 @@ const textNodes = [
   },
   {
     id: 36,
-    text: 'Isabell suggested going on a "Sweet Hut run" after you and Jerry were done with classes. As the three of you arrive to Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?',
+    text: 'Isabell suggested going on a "Sweet Hut run" after you and Jerry were done with classes. As the three of you arrive at Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?',
     options: [
       {
         text: "Suddenly, Nicole calls you. Answer the phone?",
@@ -633,18 +633,18 @@ const textNodes = [
         nextText: 38,
       },
       {
-        text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember come on!",
+        text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember, brain, come on!",
         setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
-        text: 'Jerry says, "You can\'t go wrong with Mango Green/Black Tea"',
+        text: 'Jerry says, "You can\'t go wrong with Mango Black Tea."',
         setState: { goodIsa: true },
         requiredState: (currentState) => currentState.wingman,
         nextText: 37,
       },
       {
-        text: "Mango Green/Black Tea. Not your traditional drink, but seems fruity.",
+        text: "Mango Black Tea. Not your traditional drink, but seems fruity.",
         setState: { goodIsa: true },
         requiredState: (currentState) => !currentState.wingman,
         nextText: 37,
@@ -656,17 +656,17 @@ const textNodes = [
     text: 'Isabell exclaims, "This is my favorite thing to get here, how did you know?"',
     options: [
       {
-        text: '"I knew you would love it, we\'ve been friends for so long!". You wink at Jerry to thank him for the help.',
+        text: '"I knew you would love it, we\'ve been friends for so long!" You wink at Jerry to thank him for the help.',
         requiredState: (currentState) => currentState.wingman,
         nextText: 39,
       },
       {
-        text: '"I kind of just guessed, but I am glad that you enjoy it!"',
+        text: '"I kind of just guessed, but I\'m glad that you enjoy it!"',
         requiredState: (currentState) => !currentState.wingman,
         nextText: 39,
       },
       {
-        text: '"Of course I knew, I am just a big brain alpha male you know?"',
+        text: '"Of course I knew, I\'m just a big brain alpha male you know?"',
         requiredState: (currentState) => !currentState.wingman,
         setState: { goodIsa: false, badIsa: true },
         nextText: 39,
@@ -675,7 +675,7 @@ const textNodes = [
   },
   {
     id: 38,
-    text: '"Thanks for the drink! I usually don\'t get this often. I would have preferred something else, but no biggie!"',
+    text: '"Thanks for the drink! I usually don\'t get this often. I would have preferred something else but no biggie!"',
     options: [
       {
         text: "You see Jerry in the corner of your eye laughing, as he tries to not make too much noise.",
@@ -685,7 +685,7 @@ const textNodes = [
   },
   {
     id: 39,
-    text: "The sun has started to set, and you decide to head to Willage with Jerry and Isabell for dinner. Grabbing the best dinning food that Tech offers, you begin to enjoy your meal and converse with Jerry.",
+    text: "The sun has started to set, and you decide to head to Willage with Jerry and Isabell for dinner. Grabbing the best dining food that Tech has to offer, you begin to enjoy your meal and talk to Jerry.",
     options: [
       {
         text: "Continue",
@@ -731,17 +731,17 @@ const textNodes = [
   },
   {
     id: 42,
-    text: 'The three of you have wonderful conversations and it feels great to catch up with Isabell. Jerry asks, "Isabell, do you want to come over our dorm and play some Mario Kart?"',
+    text: 'The three of you have wonderful conversations and it feels great to catch up with Isabell. Jerry asks, "Isabell, do you want to come over to our dorm and play some Mario Kart?"',
     options: [
       {
-        text: 'You answer, "ooooo that sounds like fun. Isabell, you should stop by!"',
+        text: 'You answer, "Ooooo that sounds like fun. Isabell, you should stop by!"',
         nextText: 43,
       },
     ],
   },
   {
     id: 43,
-    text: "As the school years progress, the three of you stay great friends who love to spend time with one another. From countless Sweet Hut runs, to those Willage dinner nights, the friendship bond is as strong as ever.",
+    text: "As the school years progresses, the three of you stay great friends who love to spend time with one another. From countless Sweet Hut runs, to those Willage dinner nights, the friendship bond is as strong as ever.",
     options: [
       {
         text: "End",
@@ -751,7 +751,7 @@ const textNodes = [
   },
   {
     id: 44,
-    text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy talking with Jerry. She asks, "Hey Jerry, do you want to try out this restaurant some time in the upcoming week?"',
+    text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy talking with Jerry. She asks, "Hey Jerry, do you want to try out this restaurant next weekend?"',
     options: [
       {
         text: "Continue",
@@ -761,7 +761,7 @@ const textNodes = [
   },
   {
     id: 45,
-    text: "As the school years progress, Jerry and Isabell grew closer and closer. They end up as Tech's cutest couple, and you are happy for the both of them.",
+    text: "As the school years progresses, Jerry and Isabell grow closer and closer. They end up as Tech's cutest couple, and you are happy for the both of them.",
     options: [
       {
         text: "End",
@@ -771,14 +771,14 @@ const textNodes = [
   },
   {
     id: 46,
-    text: '"Hey I am really sorry but if you are still free now, do you want to grab some food?"',
+    text: '"Hey I\'m really sorry, but if you\'re still free now, do you want to grab some food?" she says.',
     options: [
       {
-        text: '"Oh yeah I am not busy right now, I can meet you at Tin Drum!"',
+        text: '"Oh yeah, I\'m not busy right now, so I can meet you at Tin Drum!"',
         nextText: 48,
       },
       {
-        text: '"Sorry, I am already out with some peeps, next time though for sure!',
+        text: '"Sorry, I\'m already out with some peeps, next time for sure though!"',
         setState: { routeNic: false },
         nextText: 47,
       },
@@ -786,7 +786,7 @@ const textNodes = [
   },
   {
     id: 47,
-    text: "As the three of you arrive to Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?",
+    text: "As the three of you arrive at Sweet Hut, Isabell asks if you can order something for her since she needs to use the bathroom. What do you order?",
     options: [
       {
         text: 'Jerry says, "You can\'t go wrong with Sweet Hut Milk Tea."',
@@ -806,18 +806,18 @@ const textNodes = [
         nextText: 38,
       },
       {
-        text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember come on!",
+        text: "Coffee Milk Tea. Does she like to drink coffee? Ugh, remember, brain, come on!",
         setState: { goodIsa: false, badIsa: true },
         nextText: 38,
       },
       {
-        text: 'Jerry says, "You can\'t go wrong with Mango Green/Black Tea"',
+        text: 'Jerry says, "You can\'t go wrong with Mango Black Tea."',
         setState: { goodIsa: true },
         requiredState: (currentState) => currentState.wingman,
         nextText: 37,
       },
       {
-        text: "Mango Green/Black Tea. Not your traditional drink, but seems fruity.",
+        text: "Mango Black Tea. Not your traditional drink, but seems fruity.",
         setState: { goodIsa: true },
         requiredState: (currentState) => !currentState.wingman,
         nextText: 37,
@@ -826,10 +826,10 @@ const textNodes = [
   },
   {
     id: 48,
-    text: "You make up some bad excuse to leave Jerry and Isabell to meet Nicole at Tin Drum. As you walk into the store, you are completely mesmerized by Nicole's outfit. As you are sweating profusely, what do you say to her?",
+    text: "You make up some bad excuse to leave Jerry and Isabell to meet Nicole at Tin Drum. As you walk into the restaurant, you are completely mesmerized by Nicole's outfit. As you are sweating profusely, what do you say to her?",
     options: [
       {
-        text: "\"Fancy seeing you here, 'pant', it's not like, 'pant', I just, 'pant', ran here or anything LOL.\"",
+        text: "\"Fancy seeing you here, *pant*, it's not like, *pant*, I just, *pant*, ran here or anything LOL.\"",
         nextText: 49,
       },
       {
@@ -837,32 +837,32 @@ const textNodes = [
         nextText: 49,
       },
       {
-        text: '"Did you order yet? I heard that the food here is pretty good and I am absolutely starving."',
+        text: '"Did you order yet? I heard that the food here is pretty good, and I am absolutely starving."',
         nextText: 49,
       },
     ],
   },
   {
     id: 49,
-    text: "You enjoy your time and Tin Drum with Nicole, and even end up walking her back to her dorm. During the walk, you had great conversations and felt as if there was something budding.",
+    text: "You enjoy your time at Tin Drum with Nicole and even end up walking her back to her dorm. During the walk, you had great conversations and felt as if there was something budding.",
     options: [
       {
         text: '"I had a lot of fun today! I love learning more about you and all the crazy stories you have to tell."',
         nextText: 50,
       },
       {
-        text: '"We should hangout again sometime, maybe see a movie or have a cute picnic."',
+        text: '"We should hang out again sometime, maybe see a movie or have a cute picnic."',
         nextText: 50,
       },
       {
-        text: '"We should definitely play valorant tonight, or league if that is more your style."',
+        text: '"We should definitely play Valorant tonight, or League if that\'s more your style."',
         nextText: 50,
       },
     ],
   },
   {
     id: 50,
-    text: "\"Listen George, I had a lot of fun today too. The thing is, I don't think I am ready for a relationship, and plus this was our first outing. I don't want to lead you on, but I think it is best if we just stay friends.\"",
+    text: "\"Listen George, I had a lot of fun today, too. The thing is, I don't think I\'m ready for a relationship. Plus this was just our first outing. I don't want to lead you on, but I think it\'s best if we just stay friends.\"",
     options: [
       {
         text: "Continue :(",
