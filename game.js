@@ -35,6 +35,7 @@ function showTextNode(textNodeIndex) {
       button.classList.add("btn");
       button.addEventListener("click", () => selectOption(option));
       optionButtonsElement.appendChild(button);
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
   });
 }
@@ -89,7 +90,7 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'The girl beside you responds, "ah okay...cool, ha."',
+    text: 'The girl beside you responds, "ah okay... cool, ha."',
     image: "img/frame2.jpg",
     options: [
       {
