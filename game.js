@@ -1,6 +1,11 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 
+var audio = new Audio("img/luke_faulkner_clouds.mp3");
+audio.volume = 0.45;
+audio.play();
+audio.loop = true;
+
 let state = {};
 
 function startGame() {
