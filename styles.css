@@ -43,13 +43,14 @@ img{
   margin-bottom: 20px;
 }
 #drawing{
- height: 600px;
+ height: 700px;
+ width: 934px;
  margin-bottom: 20px;
 
 }
 #draw{
   margin-left: auto;
-margin-right: auto; height: 620px;
+margin-right: auto; height: 730px;
 }
 /**
 .typewriter {
