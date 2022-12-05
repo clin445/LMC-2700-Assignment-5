@@ -57,6 +57,15 @@ function selectOption(option) {
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
   document.getElementById("draw").remove;
+  const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+  audio.volume= 0.10
+  const buttons = document.querySelectorAll("button");
+  buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
+  
 }
 
 const textNodes = [
