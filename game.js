@@ -804,7 +804,7 @@ const textNodes = [
   {
     id: 45,
     image: "img/id45.jpg",
-    text: "As the school years progresses, Jerry and Isabell grow closer and closer. They end up as Tech's cutest couple, and you are happy for the both of them.",
+    text: "As the school years progresses, Jerry and Isabell grow closer and closer. They end up as Tech's cutest couple, and you are alone and sad, but you are happy for the both of them.",
     options: [
       {
         text: "End",
