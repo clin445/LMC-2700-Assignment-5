@@ -1,10 +1,13 @@
 const textElement = document.getElementById("text");
 const optionButtonsElement = document.getElementById("option-buttons");
 
-var audio = new Audio("img/luke_faulkner_clouds.mp3");
-audio.volume = 0.45;
-audio.play();
-audio.loop = true;
+setTimeout(() => {
+  document.getElementById("img/luke_faulkner_clouds.mp3")
+}, 500)
+var bgAudio = new Audio("img/luke_faulkner_clouds.mp3");
+bgAudio.volume = 0.45;
+bgAudio.play();
+bgAudio.loop = true;
 
 let state = {};
 
@@ -58,7 +61,7 @@ function selectOption(option) {
   showTextNode(nextTextNodeId);
   document.getElementById("draw").remove;
   const audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
-  audio.volume= 0.10
+  audio.volume = 0.10
   const buttons = document.querySelectorAll("button");
   buttons.forEach(button => {
   button.addEventListener("click", () => {
@@ -72,7 +75,7 @@ const textNodes = [
   //The beginning of the Story plot line
   {
     id: 1,
-    text: "Welcome to LoveStung! Our main protagonist is George P. Burdell, a freshman CS major starting his first year in college.",
+    text: "Welcome to LoveStung! Please turn on your sound :) \nOur main protagonist is George P. Burdell, a freshman CS major starting his first year in college.",
     options: [
       {
         text: "Start",
