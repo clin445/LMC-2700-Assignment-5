@@ -872,7 +872,7 @@ const textNodes = [
         nextText: 39,
       }
     ],
-  };
+  },
 ];
 
 startGame();
