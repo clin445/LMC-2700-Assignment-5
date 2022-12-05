@@ -4,10 +4,14 @@ const optionButtonsElement = document.getElementById("option-buttons");
 setTimeout(() => {
   document.getElementById("img/luke_faulkner_clouds.mp3")
 }, 500)
-var bgAudio = new Audio("img/luke_faulkner_clouds.mp3");
-bgAudio.volume = 0.45;
-bgAudio.play();
-bgAudio.loop = true;
+var bgAudio = document.createElement("audio")
+document.body.appendChild(bgAudio);
+bgAudio.src = "img/luke_faulkner_clouds.mp3"
+document.body.addEventListener("mousemove", function () {
+  bgAudio.volume = 0.45;
+  bgAudio.play()
+  bgAudio.loop = true;
+})
 
 let state = {};
 
