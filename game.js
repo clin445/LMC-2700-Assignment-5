@@ -435,7 +435,7 @@ const textNodes = [
   },
   {
     id: 24,
-    image: "img/id23.jpg",
+    image: "img/id24.jpg",
     text: "You look at your phone and decide who you should ask to make plans with for the upcoming weekend.",
     options: [
       {
@@ -459,6 +459,7 @@ const textNodes = [
   },
   {
     id: 25,
+    image: "img/id25+46.jpg",
     text: 'Nicole responds quickly with, "I\'m sorry, but I already have plans with some friends this weekend."',
     options: [
       {
@@ -469,6 +470,7 @@ const textNodes = [
   },
   {
     id: 26,
+    image: "img/id26.jpg",
     text: 'Jennifer exclaims, "Yeah that sounds like fun! Do you happen to play tennis? I played a lot when I was in high school, and I\'ve been dying to play a game!"',
     options: [
       {
@@ -483,6 +485,7 @@ const textNodes = [
   },
   {
     id: 27,
+    image: "img/id27.jpg",
     text: ' You suddenly get a text and you see: "Hey George! It\'s been a while, but we should hang out this weekend! You can bring your roommate too if he wants to come with us :)" \n How do you respond?',
     options: [
       {
@@ -499,6 +502,7 @@ const textNodes = [
   },
   {
     id: 28,
+    image: "img/id28.jpg",
     text: "The weekend rolls around and you are excited to play tennis with Jennifer! As you arrive at Ken Byers' courts, you notice her already practicing some hits. What do you say?",
     options: [
       {
@@ -520,6 +524,7 @@ const textNodes = [
   },
   {
     id: 29,
+    image: "img/id29.jpg",
     text: "\"I've been playing for a while now, so I hope you don't get too intimidated. Let's rally for a bit and then play a few games!\" Jennifer smirks.",
     options: [
       {
@@ -530,6 +535,7 @@ const textNodes = [
   },
   {
     id: 30,
+    image: "img/id30.jpg",
     text: "Just as the final point is being played, you trip and fall trying to reach a well placed cross court forehand by Jennifer. You have just lost all 3 games. Jennifer seems worried about you and rushes to see if you are okay. What do you say?",
     options: [
       {
@@ -550,6 +556,7 @@ const textNodes = [
   },
   {
     id: 31,
+    image: "img/id31.jpg",
     text: "\"Wow I didn't know I was playing with a sore loser baby. You deserve to lose, maybe trying working on... I don't know... EVERYTHING CAUSE YOU SUCK!\" Jennifer yells.",
     options: [
       {
@@ -561,6 +568,7 @@ const textNodes = [
   },
   {
     id: 32,
+    image: "img/id32.jpg",
     text: '"Thanks, you played really well too! We should play again sometime," Jennifer smiles warmly.',
     options: [
       {
@@ -579,6 +587,7 @@ const textNodes = [
   },
   {
     id: 33,
+    image: "img/id33.jpg",
     text: 'You and Jennifer end up playing badminton all night at the CRC. There seems to be a spark that draws both of you into each other. You would end up going on countless amounts of dates with Jennifer, as you really enjoy spending time with her. One day while hanging out, she asks you for advice. "I just got an offer to study abroad at multiple prestigious universities! The thing is, it would be for two years, meaning that I would graduate without seeing you for two years. Do you think I should take the offer?"',
     options: [
       {
@@ -593,6 +602,7 @@ const textNodes = [
   },
   {
     id: 34,
+    image: "img/id34.jpg",
     text: '"Got it, thanks for the advice!"\n You start to date Jennifer for a couple of months and everything seems to be going well. However, she eventually breaks up with you after coming to the conclusion that she wants to focus on herself and her career.',
     options: [
       {
@@ -603,6 +613,7 @@ const textNodes = [
   },
   {
     id: 35,
+    image: "img/id35.jpg",
     text: '"Got it, thanks for the advice!"\n Jennifer ends up traveling abroad, but you stay in close contact with her. Your bond is strong and you both remain great friends for years to come.',
     options: [
       {
@@ -613,6 +624,7 @@ const textNodes = [
   },
   {
     id: 36,
+    image: "img/id36.jpg",
     text: 'Isabell suggested going on a "Sweet Hut run" after you and Jerry were done with classes. As the three of you arrive at Sweet Hut, Isabell asks if you can order her something since she needed to use the bathroom. What do you order?',
     options: [
       {
@@ -659,6 +671,7 @@ const textNodes = [
   },
   {
     id: 37,
+    image: "img/id37.jpg",
     text: 'Isabell exclaims, "This is my favorite thing to get here, how did you know?"',
     options: [
       {
@@ -681,6 +694,7 @@ const textNodes = [
   },
   {
     id: 38,
+    image: "img/id38+47.jpg",
     text: '"Thanks for the drink! I usually don\'t get this often. I would have preferred something else but no biggie!"',
     options: [
       {
@@ -691,6 +705,7 @@ const textNodes = [
   },
   {
     id: 39,
+    image: "img/id39.jpg",
     text: "The sun has started to set, and you decide to head to Willage with Jerry and Isabell for dinner. Grabbing the best dining food that Tech has to offer, you begin to enjoy your meal and talk to Jerry.",
     options: [
       {
@@ -717,6 +732,7 @@ const textNodes = [
   },
   {
     id: 40,
+    image: "img/id40+42.jpg",
     text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy catching up with you. She asks, "Hey George, do you want to maybe watch a movie later tonight at my place? I\'ve got popcorn!"',
     options: [
       {
@@ -727,6 +743,7 @@ const textNodes = [
   },
   {
     id: 41,
+    image: "img/id41.jpg",
     text: "You share many wonderful dates and excursions with Isabell, and eventually you become the cutest couple on Tech campus.",
     options: [
       {
@@ -737,6 +754,7 @@ const textNodes = [
   },
   {
     id: 42,
+    image: "img/id40+42.jpg",
     text: 'The three of you have wonderful conversations and it feels great to catch up with Isabell. Jerry asks, "Isabell, do you want to come over to our dorm and play some Mario Kart?"',
     options: [
       {
@@ -747,6 +765,7 @@ const textNodes = [
   },
   {
     id: 43,
+    image: "img/id43.jpg",
     text: "As the school years progresses, the three of you stay great friends who love to spend time with one another. From countless Sweet Hut runs, to those Willage dinner nights, the friendship bond is as strong as ever.",
     options: [
       {
@@ -757,6 +776,7 @@ const textNodes = [
   },
   {
     id: 44,
+    image: "img/id44.jpg",
     text: 'The three of you have wonderful conversations, and Isabell seems to especially enjoy talking with Jerry. She asks, "Hey Jerry, do you want to try out this restaurant next weekend?"',
     options: [
       {
@@ -767,6 +787,7 @@ const textNodes = [
   },
   {
     id: 45,
+    image: "img/id45.jpg",
     text: "As the school years progresses, Jerry and Isabell grow closer and closer. They end up as Tech's cutest couple, and you are happy for the both of them.",
     options: [
       {
@@ -777,6 +798,7 @@ const textNodes = [
   },
   {
     id: 46,
+    image: "img/id46.jpg",
     text: '"Hey I\'m really sorry, but if you\'re still free now, do you want to grab some food?" she says.',
     options: [
       {
@@ -792,6 +814,7 @@ const textNodes = [
   },
   {
     id: 47,
+    image: "img/id38+47.jpg",
     text: "As the three of you arrive at Sweet Hut, Isabell asks if you can order something for her since she needs to use the bathroom. What do you order?",
     options: [
       {
@@ -832,6 +855,7 @@ const textNodes = [
   },
   {
     id: 48,
+    image: "img/id48.jpg",
     text: "You make up some bad excuse to leave Jerry and Isabell to meet Nicole at Tin Drum. As you walk into the restaurant, you are completely mesmerized by Nicole's outfit. As you are sweating profusely, what do you say to her?",
     options: [
       {
@@ -850,6 +874,7 @@ const textNodes = [
   },
   {
     id: 49,
+    image: "img/id49.jpg",
     text: "You enjoy your time at Tin Drum with Nicole and even end up walking her back to her dorm. During the walk, you had great conversations and felt as if there was something budding.",
     options: [
       {
@@ -868,6 +893,7 @@ const textNodes = [
   },
   {
     id: 50,
+    image: "img/id50.jpg",
     text: "\"Listen George, I had a lot of fun today, too. The thing is, I don't think I\'m ready for a relationship. Plus this was just our first outing. I don't want to lead you on, but I think it\'s best if we just stay friends.\"",
     options: [
       {
