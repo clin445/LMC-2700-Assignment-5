@@ -375,7 +375,7 @@ const textNodes = [
   {
     id: 20,
     image: "img/id20.jpg",
-    text: ' You pay attention to the lecure but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I couldn\'t help but to laugh at someone sleeping on the first day." How do you respond?',
+    text: ' You pay attention to the lecture but it is kind of boring so you struggle to keep awake during class. The girl nexts to you hides her chuckle poorly as she watches you fight for your life to stay awake. "Sorry," she whispers to you, "I couldn\'t help but to laugh at someone sleeping on the first day." How do you respond?',
     options: [
       {
         text: '"Right, because the syllabus is just that important," you jab back, more lucid.',
@@ -502,7 +502,7 @@ const textNodes = [
   {
     id: 27,
     image: "img/id27.jpg",
-    text: ' You suddenly get a text and you see: "Hey George! It\'s been a while, but we should hang out this weekend! You can bring your roommate too if he wants to come with us :)" \n How do you respond?',
+    text: ' You suddenly get a text from Isabell: "Hey George! It\'s been a while, but we should hang out this weekend! You can bring your roommate too if he wants to come with us :)" \n How do you respond?',
     options: [
       {
         text: "\"Hey Isabell! I would love to hang out this weekend. I haven't seen you since the summer. I'll make sure to tell Jerry and let him know :D\"",
@@ -555,7 +555,7 @@ const textNodes = [
     text: "Just as the final point is being played, you trip and fall trying to reach a well placed cross court forehand by Jennifer. You have just lost all 3 games. Jennifer seems worried about you and rushes to see if you are okay. What do you say?",
     options: [
       {
-        text: '"I cannot believe the amount of luck that you have. There is no way, on a good day, that you would even have a chance of beating me. I\'ll let these few wins slide, but next time I will definitely win."',
+        text: '"This is all luck, no skill. There is no way, on a good day, that you would ever have a chance of beating ME. I\'ll let these few wins slide, but next time I will definitely beat you."',
         setState: { goodJen: false },
         nextText: 31,
       },
